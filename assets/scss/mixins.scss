@@ -1,0 +1,24 @@
+@mixin font-poppins-normal {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@mixin font-poppins-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #4d533c;
+}
+
+@mixin font-popins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #4d533c; //У H1 в header наверное придется цвет перезадать на белый, или может нужно будет убрать цвет вообще от сюда//
+}
+
+@mixin font-FontAwesome-button-link {
+  font-family: "FontAwesome", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
