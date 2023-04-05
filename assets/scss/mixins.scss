@@ -22,3 +22,9 @@
   font-weight: 400;
   font-style: normal;
 }
+
+@mixin wrapper {
+  max-width: 1110px;
+  padding: 0 15px;
+  margin: auto;
+}
