@@ -17,10 +17,27 @@
   color: #4d533c; //У H1 в header наверное придется цвет перезадать на белый, или может нужно будет убрать цвет вообще от сюда//
 }
 
-@mixin font-FontAwesome-button-link {
+@mixin font-FontAwesome-button-link($link, $hover) {
+  position: relative;
   font-family: "FontAwesome", sans-serif;
   font-weight: 400;
   font-style: normal;
+  text-decoration-line: underline;
+  line-height: 1.1;
+  color: $link;
+  padding-left: 5px;
+  &:hover {
+    color: $hover;
+    &:before {
+      content: url("../image/link_Triangle_hover.svg");
+    }
+  }
+  &:before {
+    position: absolute;
+    text-align: center;
+    left: -5px;
+    content: url("../image/link_Triangle.svg");
+  }
 }
 
 @mixin wrapper {
