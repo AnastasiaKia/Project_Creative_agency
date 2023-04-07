@@ -238,9 +238,7 @@
 .header__top {
   display: flex;
   justify-content: space-between;
-  padding-top: 23px;
-  padding-left: 164px;
-  padding-right: 164px;
+  padding-top: 20px;
 }
 .header__text {
   display: flex;
@@ -248,7 +246,6 @@
   justify-content: space-between;
   width: 616px;
   height: 412px;
-  margin-left: 166px;
   margin-top: 150px;
 }
 .header__text-overtitle {
@@ -256,14 +253,14 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875em;
   color: #FFFFFF;
 }
 .header__text-title {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  font-size: 60px;
+  font-size: 3.75em;
   line-height: 74px;
   color: #FFFFFF;
 }
@@ -271,19 +268,30 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 26px;
   color: #FFFFFF;
 }
 .header__button-link {
   height: 24px;
-  font-family: "Poppins";
+  width: 100px;
+  font-family: "FontAwesome", sans-serif;;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 18px;
   text-decoration-line: underline;
   color: #FFD723;
+  padding-left: 5px;
 }
+.header__button-link:before {
+  content: url("../image/link_Triangle_hover.svg");
+  padding-right: 5px;
+}
+
+.header__button-link:hover:before {
+  content: url("../image/link_Triangle_hover.svg");
+}
+
 .header__partner {
   position: absolute;
   height: 227px;
@@ -299,8 +307,8 @@
   align-items: center;
 }
 .header__partner-logo {
-  width: 156px;
-  height: 113px;
+  width: 15%;
+  height: 50%;
 }
 
 .about-us {
@@ -318,7 +326,6 @@
   justify-content: space-between;
   width: 500px;
   height: 412px;
-  margin-left: 166px;
   margin-top: 150px;
 }
 .about-us__text-overtitle {
@@ -326,7 +333,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 21px;
   color: rgba(77, 83, 60, 0.9);
 }
@@ -336,7 +343,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 2.25em;
   line-height: 46px;
   color: #4D533C;
 }
@@ -344,20 +351,35 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 26px;
   color: rgba(33, 56, 66, 0.6);
 }
 .about-us__button-link {
   height: 24px;
-  font-family: "Poppins";
+  font-family: "FontAwesome", sans-serif;;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 18px;
   text-decoration-line: underline;
   color: #D4D6D4;
 }
+
+.about-us__button-link:hover {
+  color: #ffd723;
+}
+
+.about-us__button-link:before {
+  content: url("../image/link_Triangle.svg");
+  padding-right: 5px;
+}
+
+.about-us__button-link:hover:before {
+  content: url("../image/link_Triangle_hover.svg");
+}
+
+
 .about-us__comment {
   width: 474px;
   height: 500px;
@@ -376,7 +398,7 @@
   font-family: "Poppins";
   font-style: italic;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5em;
   line-height: 40px;
   color: #4D533C;
 }
@@ -396,7 +418,7 @@
 .about-us__name {
   font-family: "Poppins";
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5em;
   line-height: 40px;
   color: #4D533C;
 }
@@ -405,7 +427,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 24px;
   color: #152934;
 }/*# sourceMappingURL=style-part1.css.map */
