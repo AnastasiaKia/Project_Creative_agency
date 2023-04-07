@@ -7,7 +7,7 @@
 
 ## Built with
 
-HTML, CSS
+HTML, CSS, SCSS
 
 ## Developers
 
