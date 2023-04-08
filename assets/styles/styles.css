@@ -36,7 +36,7 @@
 }
 
 .our-services {
-  margin: 0 0 186px;
+  margin: 0 0 275px;
 }
 .our-services__title {
   font-family: "Poppins", sans-serif;
@@ -44,14 +44,15 @@
   font-style: normal;
   color: #4d533c;
   font-size: 36px;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   max-width: 607px;
 }
 .our-services__products {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(194px, 1fr));
-  column-gap: 1em;
+  column-gap: 5em;
+  row-gap: 2em;
 }
 .our-services__product-title {
   font-family: "Poppins", sans-serif;
@@ -63,6 +64,7 @@
   text-transform: uppercase;
   font-size: 24px;
   line-height: 34px;
+  height: 3em;
 }
 .our-services__product-excerpt {
   font-family: "Poppins", sans-serif;
@@ -70,6 +72,7 @@
   font-style: normal;
   color: rgba(33, 56, 66, 0.6);
   margin-bottom: 56px;
+  height: 7em;
 }
 .our-services__button-link {
   position: relative;
@@ -83,6 +86,7 @@
 }
 .our-services__button-link:hover {
   color: #ffd723;
+  transition: 0.1s;
 }
 .our-services__button-link:hover:before {
   content: url("../image/link_Triangle_hover.svg");
@@ -94,21 +98,31 @@
   content: url("../image/link_Triangle.svg");
 }
 
+.footer {
+  position: relative;
+}
 .footer__background {
   background-image: url("../image/footer_background.svg");
-  height: 100%;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
 }
 .footer__slogan {
+  position: absolute;
+  top: -18vh;
+  padding: 6vh 13vw 6vh 20vw;
   background-color: #fafafa;
+  box-shadow: 50px 130px 100px rgba(0, 0, 0, 0.145947);
 }
 .footer__slogan-title {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
   color: #4d533c;
-  font-size: 60px;
+  font-size: calc(12px + 1.953125vw);
   line-height: 1.2;
   max-width: 690px;
+  padding-bottom: 0.5em;
 }
 .footer__button-link {
   position: relative;
@@ -122,6 +136,7 @@
 }
 .footer__button-link:hover {
   color: #ffd723;
+  transition: 0.1s;
 }
 .footer__button-link:hover:before {
   content: url("../image/link_Triangle_hover.svg");
@@ -136,7 +151,7 @@
   display: flex;
   justify-content: space-between;
   max-width: 452px;
-  margin: 310px 0 52px;
+  padding: 22em 0 2em;
 }
 .footer__address-title {
   font-family: "Poppins", sans-serif;
@@ -186,6 +201,10 @@
   font-size: 16px;
   line-height: 2.5;
 }
+.footer__menu-item:hover {
+  color: #ffd723;
+  transition: 1s;
+}
 .footer__title {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -216,7 +235,7 @@
   font-size: 24px;
   line-height: 1.6;
   color: #ffffff;
-  padding-bottom: 24px;
+  margin-bottom: 1em;
 }
 .footer__buttom {
   display: flex;
@@ -231,6 +250,33 @@
   color: #b5c096;
 }
 
+<<<<<<< HEAD
+.footer__socials {
+  display: flex;
+  margin-top: 0.5em;
+}
+
+.footer__social {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  background-color: #444a34;
+  border-radius: 50%;
+}
+.footer__social:hover {
+  background-color: #ffd723;
+  transition: 0.1s;
+}
+.footer__social img {
+  position: absolute;
+  height: 22px;
+  height: 19px;
+  top: 9px;
+  right: 9px;
+}
+
+/*# sourceMappingURL=styles.css.map */
+=======
 .header__background {
   height: 810px;
   background-image: url(../image/background_pic.png);
@@ -604,3 +650,4 @@ h2 {
   margin-bottom: 149px;
 }
 /*# sourceMappingURL=styles.css.map *//*# sourceMappingURL=styles.css.map */
+>>>>>>> 761e7d9267fdf6a1835f2e4674c8b32398e8b6f5

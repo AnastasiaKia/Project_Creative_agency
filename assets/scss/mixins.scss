@@ -28,6 +28,7 @@
   padding-left: 5px;
   &:hover {
     color: $hover;
+    transition: 0.1s;
     &:before {
       content: url("../image/link_Triangle_hover.svg");
     }
