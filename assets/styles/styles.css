@@ -30,7 +30,7 @@
   font-style: normal;
 }
 .header {
-  background-image: url(/assets/image/background_pic.png);
+  background-image: url(assets/image/background_pic.png);
   background-repeat: no-repeat;
   object-fit: cover;
   height: 100vh;
