@@ -2,18 +2,19 @@
   @include wrapper;
 }
 .our-services {
-  margin: 0 0 186px;
+  margin: 0 0 275px;
   &__title {
     @include font-popins-bold;
     font-size: 36px;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     max-width: 607px;
   }
   &__products {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(194px, 1fr));
-    column-gap: 1em;
+    column-gap: 5em;
+    row-gap: 2em;
   }
   &__product-title {
     @include font-poppins-normal;
@@ -23,11 +24,13 @@
     text-transform: uppercase;
     font-size: 24px;
     line-height: 34px;
+    height: 3em;
   }
   &__product-excerpt {
     @include font-poppins-normal;
     color: rgba(33, 56, 66, 0.6);
     margin-bottom: 56px;
+    height: 7em;
   }
   &__button-link {
     @include font-FontAwesome-button-link(#d4d6d4, #ffd723);
@@ -35,17 +38,26 @@
 }
 
 .footer {
+  position: relative;
   &__background {
     background-image: url("../image/footer_background.svg");
-    height: 100%;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
   }
   &__slogan {
+    position: absolute;
+    top: -18vh;
+    padding: 6vh 13vw 6vh 20vw;
+    // padding: 70px 489px 50px 169px;
     background-color: #fafafa;
+    box-shadow: 50px 130px 100px rgba(0, 0, 0, 0.145947);
     &-title {
       @include font-popins-bold;
-      font-size: 60px;
+      font-size: calc(12px + 25 * (100vw / 1280));
       line-height: 1.2;
       max-width: 690px;
+      padding-bottom: 0.5em;
     }
   }
   &__button-link {
@@ -55,7 +67,7 @@
     display: flex;
     justify-content: space-between;
     max-width: 452px;
-    margin: 310px 0 52px;
+    padding: 22em 0 2em;
     &-title {
       @include font-poppins-normal;
       color: #b6c197;
@@ -94,6 +106,10 @@
       color: #b6c197;
       font-size: 16px;
       line-height: 2.5;
+      &:hover {
+        color: #ffd723;
+        transition: 1s;
+      }
     }
   }
 
@@ -120,6 +136,7 @@
     font-size: 24px;
     line-height: 1.6;
     color: #ffffff;
+    margin-bottom: 1em;
   }
   &__buttom {
     display: flex;
@@ -132,16 +149,25 @@
     }
   }
 }
-
+.footer__socials {
+  display: flex;
+  margin-top: 0.5em;
+}
 .footer__social {
-}
-.strainght {
-}
-.footer__buttom {
-}
-.footer__buttom-logo {
-}
-.footer__logo-img {
-}
-.footer__buttom- {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  background-color: #444a34;
+  border-radius: 50%;
+  &:hover {
+    background-color: #ffd723;
+    transition: 0.1s;
+  }
+  img {
+    position: absolute;
+    height: 22px;
+    height: 19px;
+    top: 9px;
+    right: 9px;
+  }
 }
